@@ -1,0 +1,16 @@
+<div class="card">
+    <img [src]="pokemon().image" height="80" alt="Pika pika" />
+    <h3>{{ pokemon().name }}</h3>
+
+    <button (click)="toggleDetails()">
+      {{ showDetails() ? 'Hide' : 'Show' }} details
+    </button>
+
+    @if (showDetails()) {
+      @defer (on idle) {
+        <pokemon-details [id]="pokemon().id" />
+      } @placeholder {
+        <p>Loading details...</p>
+      }
+    }
+  </div>

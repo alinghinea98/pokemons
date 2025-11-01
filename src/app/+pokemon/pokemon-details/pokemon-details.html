@@ -1,0 +1,8 @@
+@if (loading()) {
+    <p>Loading details...</p>
+} @else {
+    <div class="pokemon-details">
+        <p><strong>Types:</strong> {{ details().types.join(', ') }}</p>
+        <p><strong>Base XP:</strong> {{ details().experience }}</p>
+    </div>
+}

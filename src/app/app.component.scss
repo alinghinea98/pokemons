@@ -1,0 +1,10 @@
+h1 {
+    margin: 1rem auto;
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    place-items: center;
+    gap: 1rem;
+}
