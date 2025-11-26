@@ -1,5 +1,15 @@
 <h1>Pokédex</h1>
 
+<div class="header-actions">
+  <button class="btn-primary add-pokemon-btn"(click)="showDialog.set(true)">
+    + Add Pokémon
+  </button>
+</div>
+
+@if(showDialog()) {
+  <app-add-pokemon-dialog (close)="showDialog.set(false)" />
+}
+
 @if (service.loading()) {
   <p>Loading Pokémons...</p>
 } @else {

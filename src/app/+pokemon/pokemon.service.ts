@@ -43,6 +43,10 @@ export class PokemonService {
             experience: data.base_experience
         };
     }
+
+    addPokemon(pokemon: Pokemon) {
+        this.pokemons.update(pokemons => [pokemon, ...pokemons]);
+    }
 }
 
 export interface Pokemon {

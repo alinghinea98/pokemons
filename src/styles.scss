@@ -7,3 +7,21 @@
 html {
     background: #e7f5f5;
 }
+
+.btn-primary {
+    height: 50px;
+    border-radius: 20px;
+    border-color: transparent;
+    background: #95ed95;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    height: 50px;
+    border-radius: 20px;
+    border-color: transparent;
+    background: #f8353c;
+    font-size: 1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+<main>
+    <h1>Add Pokemon</h1>
+    <form (submit)="addPokemon($event)" autocomplete="off">
+        <label for="name">Name</label>
+        <input [field]="pokemonForm.name" />
+        <label for="image">Image URL</label>
+        <input [field]="pokemonForm.image" />
+        <label for="xp">XP</label>
+        <input type="number" [field]="pokemonForm.xp" />
+        <label for="types">Types</label>
+        <input [field]="pokemonForm.types" />
+        <button type="submit" class="btn-primary">Add Pokemon</button>
+        <button type="button" (click)="closeModal()" class="btn-secondary">Cancel</button>
+    </form>
+</main>
